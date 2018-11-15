@@ -1,5 +1,6 @@
 "use strict";
 const stateless = require("../handlers/stateless");
+const locationHandler = require("../handlers/locationIntent");
 // =================================================================================
 // App Configuration
 // =================================================================================
@@ -11,11 +12,8 @@ const config = {
 };
 
 const app = new App(config);
-
-// =================================================================================
-// App Logic
-// =================================================================================
-
-app.setHandler(stateless);
-
+app.setHandler(stateless, locationHandler);
+exports.handler = (event, context, callback) => {
+  app.handleLambda(event, context, callback);
+};
 module.exports.app = app;
