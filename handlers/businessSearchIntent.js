@@ -16,7 +16,7 @@ module.exports = {
       if (allRestaurants.length > 0) {
         const bestRestaurants = getBestRestaurants(response.data.businesses);
         console.log("First best Restaurant ", bestRestaurants[0]);
-        const speech = `I found ${
+        const speech = `How about ${
           bestRestaurants[0].name
         } restaurant . ask me to hear the details, or begin new search `;
 
