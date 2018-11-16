@@ -1,6 +1,9 @@
 "use strict";
+
 const stateless = require("../handlers/stateless");
 const locationHandler = require("../handlers/locationIntent");
+const businessSearchHandler = require("../handlers/businessSearchIntent");
+const nameState = require("../states/name");
 // =================================================================================
 // App Configuration
 // =================================================================================
@@ -12,7 +15,7 @@ const config = {
 };
 
 const app = new App(config);
-app.setHandler(stateless, locationHandler);
+app.setHandler(stateless, locationHandler, nameState, businessSearchHandler);
 exports.handler = (event, context, callback) => {
   app.handleLambda(event, context, callback);
 };
