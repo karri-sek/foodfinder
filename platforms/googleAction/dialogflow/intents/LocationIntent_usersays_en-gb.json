@@ -1,0 +1,82 @@
+[
+	{
+		"data": [
+			{
+				"text": "consider ",
+				"userDefined": false
+			},
+			{
+				"text": "location",
+				"userDefined": true,
+				"alias": "location",
+				"meta": "@sys.any"
+			},
+			{
+				"text": " as my preferred location",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "location",
+				"userDefined": true,
+				"alias": "location",
+				"meta": "@sys.any"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "location",
+				"userDefined": true,
+				"alias": "location",
+				"meta": "@sys.any"
+			},
+			{
+				"text": " is my preferred location",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "please search in this ",
+				"userDefined": false
+			},
+			{
+				"text": "location",
+				"userDefined": true,
+				"alias": "location",
+				"meta": "@sys.any"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "I would like to search in this ",
+				"userDefined": false
+			},
+			{
+				"text": "location",
+				"userDefined": true,
+				"alias": "location",
+				"meta": "@sys.any"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	}
+]

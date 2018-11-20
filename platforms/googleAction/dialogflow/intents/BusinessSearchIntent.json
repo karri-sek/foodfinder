@@ -1,0 +1,23 @@
+{
+	"name": "BusinessSearchIntent",
+	"auto": true,
+	"webhookUsed": true,
+	"responses": [
+		{
+			"parameters": [
+				{
+					"isList": false,
+					"name": "recipe",
+					"value": "$recipe",
+					"dataType": "@sys.any"
+				},
+				{
+					"isList": false,
+					"name": "restaurant",
+					"value": "$restaurant",
+					"dataType": "@sys.any"
+				}
+			]
+		}
+	]
+}

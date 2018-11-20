@@ -1,8 +1,21 @@
 {
-	"alexaSkill": {
-		"nlu": {
-			"name": "alexa"
-		}
-	},
-	"endpoint": "https://webhook.jovo.cloud/6f51434c-0ea1-4d80-b917-c0da3ee20983"
+  "alexaSkill": {
+    "nlu": {
+      "name": "alexa"
+    },
+    "lang": {
+      "en": ["en-US", "en-GB"]
+    },
+    "skillId": "amzn1.ask.skill.691607f7-c30d-4534-8243-e24766af940e",
+    "askProfile": "sekhar-uk"
+  },
+  "googleAction": {
+    "nlu": {
+      "name": "dialogflow"
+    },
+    "lang": {
+      "en": ["en-US", "en-GB"]
+    }
+  },
+  "endpoint": "https://webhook.jovo.cloud/6f51434c-0ea1-4d80-b917-c0da3ee20983"
 }

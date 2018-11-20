@@ -1,0 +1,17 @@
+{
+	"name": "HearDetails",
+	"auto": true,
+	"webhookUsed": true,
+	"responses": [
+		{
+			"parameters": [
+				{
+					"isList": false,
+					"name": "restaurant",
+					"value": "$restaurant",
+					"dataType": "@sys.any"
+				}
+			]
+		}
+	]
+}

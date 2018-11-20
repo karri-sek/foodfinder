@@ -1,0 +1,106 @@
+[
+	{
+		"data": [
+			{
+				"text": "love to hear this ",
+				"userDefined": false
+			},
+			{
+				"text": "restaurant",
+				"userDefined": true,
+				"alias": "restaurant",
+				"meta": "@sys.any"
+			},
+			{
+				"text": " details",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "I would like to hear more details on this ",
+				"userDefined": false
+			},
+			{
+				"text": "restaurant",
+				"userDefined": true,
+				"alias": "restaurant",
+				"meta": "@sys.any"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "tell me more details about this ",
+				"userDefined": false
+			},
+			{
+				"text": "restaurant",
+				"userDefined": true,
+				"alias": "restaurant",
+				"meta": "@sys.any"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "restaurant",
+				"userDefined": true,
+				"alias": "restaurant",
+				"meta": "@sys.any"
+			},
+			{
+				"text": " details",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "tell me more about this ",
+				"userDefined": false
+			},
+			{
+				"text": "restaurant",
+				"userDefined": true,
+				"alias": "restaurant",
+				"meta": "@sys.any"
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "Hear details",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "Hear the details",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	}
+]
