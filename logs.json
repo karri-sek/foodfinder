@@ -1,0 +1,155 @@
+Example server listening on port 3000!
+This is your webhook url: https://68a1b849.ngrok.io/webhook
+{
+	"version": "1.0",
+	"session": {
+		"new": true,
+		"sessionId": "amzn1.echo-api.session.b5101549-c78d-4906-844f-d84a8a41eaa9",
+		"application": {
+			"applicationId": "amzn1.ask.skill.691607f7-c30d-4534-8243-e24766af940e"
+		},
+		"user": {
+			"userId": "amzn1.ask.account.AGP7EH6RPDAV2ZYQZFRPYKP73OFRHJB4YZ75WG5S5CLUX6GWHQSAUPXZFMRW7FEVRCLL67GZRVF4UVIOT7TTG7FMVLIY2SKOIOLDR3XQSQMCRTF27UTKXRPG5XIZCEMLXMKU3AALRXFGLDA3VQ4N5FAQMPKWAH2FNF7FAKPD3OZBCKFMYW5ZVBYXEK5HG2YIET3BOFR5BESHZZA"
+		}
+	},
+	"context": {
+		"AudioPlayer": {
+			"playerActivity": "IDLE"
+		},
+		"Display": {},
+		"System": {
+			"application": {
+				"applicationId": "amzn1.ask.skill.691607f7-c30d-4534-8243-e24766af940e"
+			},
+			"user": {
+				"userId": "amzn1.ask.account.AGP7EH6RPDAV2ZYQZFRPYKP73OFRHJB4YZ75WG5S5CLUX6GWHQSAUPXZFMRW7FEVRCLL67GZRVF4UVIOT7TTG7FMVLIY2SKOIOLDR3XQSQMCRTF27UTKXRPG5XIZCEMLXMKU3AALRXFGLDA3VQ4N5FAQMPKWAH2FNF7FAKPD3OZBCKFMYW5ZVBYXEK5HG2YIET3BOFR5BESHZZA"
+			},
+			"device": {
+				"deviceId": "amzn1.ask.device.AGHBKIGQYS5KPCQSTEUFNI3QUH6BAQRC5RKKSWMK5VFFLSQJBZU6SDJHE7O5KHXKCFWG2FIWV767II3ATT4FOPNXY3MFEGZIXVGQ6LZWUDXNPV5FLFHUTC23UT5DWBFDIGKYJB7MUQ6UN4TG3YAOFOQJJDRA",
+				"supportedInterfaces": {
+					"AudioPlayer": {},
+					"Display": {
+						"templateVersion": "1.0",
+						"markupVersion": "1.0"
+					}
+				}
+			},
+			"apiEndpoint": "https://api.eu.amazonalexa.com",
+			"apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjY5MTYwN2Y3LWMzMGQtNDUzNC04MjQzLWUyNDc2NmFmOTQwZSIsImV4cCI6MTU0MjY0MDU4NCwiaWF0IjoxNTQyNjM2OTg0LCJuYmYiOjE1NDI2MzY5ODQsInByaXZhdGVDbGFpbXMiOnsiY29uc2VudFRva2VuIjpudWxsLCJkZXZpY2VJZCI6ImFtem4xLmFzay5kZXZpY2UuQUdIQktJR1FZUzVLUENRU1RFVUZOSTNRVUg2QkFRUkM1UktLU1dNSzVWRkZMU1FKQlpVNlNESkhFN081S0hYS0NGV0cyRklXVjc2N0lJM0FUVDRGT1BOWFkzTUZFR1pJWFZHUTZMWldVRFhOUFY1RkxGSFVUQzIzVVQ1RFdCRkRJR0tZSkI3TVVRNlVONFRHM1lBT0ZPUUpKRFJBIiwidXNlcklkIjoiYW16bjEuYXNrLmFjY291bnQuQUdQN0VINlJQREFWMlpZUVpGUlBZS1A3M09GUkhKQjRZWjc1V0c1UzVDTFVYNkdXSFFTQVVQWFpGTVJXN0ZFVlJDTEw2N0daUlZGNFVWSU9UN1RURzdGTVZMSVkyU0tPSU9MRFIzWFFTUU1DUlRGMjdVVEtYUlBHNVhJWkNFTUxYTUtVM0FBTFJYRkdMREEzVlE0TjVGQVFNUEtXQUgyRk5GN0ZBS1BEM09aQkNLRk1ZVzVaVkJZWEVLNUhHMllJRVQzQk9GUjVCRVNIWlpBIn19.S7yostYgU113rI4EqXfQsxXYk6n9Kt27qamiGB6qSEpvUbACUQPLCOsCVePCP_LhB8FxY_pY-C6JY4lvuKvc3OkKvyIXsFWNwNhgjZiOG5M8VT6FLZ02dOrqoYH-7VkKbLO0Wp-AfjN-fc9ru0wAlhvVJI8Y_uGuelG3C1OF6K9XiqBk96LpSiWJ71_taDiuJIBGo-0KdY4jsroYCFDWshHBF4hDUCzq-bZNjYJcJkaYuRP7EkdA7aTGCtj0gpUPapnzR9lqk25vSEm0m7_5DILqzFCy_LIeJyKZ2KK-IfZcocjI5mBVyP2PE9rHE0hQg5UY3wjVNvX51KrX9H2r_Q"
+		},
+		"Viewport": {
+			"experiences": [
+				{
+					"arcMinuteWidth": 246,
+					"arcMinuteHeight": 144,
+					"canRotate": false,
+					"canResize": false
+				}
+			],
+			"shape": "RECTANGLE",
+			"pixelWidth": 1024,
+			"pixelHeight": 600,
+			"dpi": 160,
+			"currentPixelWidth": 1024,
+			"currentPixelHeight": 600,
+			"touch": [
+				"SINGLE"
+			]
+		}
+	},
+	"request": {
+		"type": "LaunchRequest",
+		"requestId": "amzn1.echo-api.request.b7862c80-6bf5-48d6-b482-60c557bbe4b0",
+		"timestamp": "2018-11-19T14:16:24Z",
+		"locale": "en-GB",
+		"shouldLinkResultBeReturned": false
+	}
+}
+Error: Language resources have not been set for translation.
+    at Jovo.t (/Users/sekkarri/repos/foodfinder/node_modules/jovo-framework/lib/jovo.js:790:19)
+    at Jovo.WelcomeIntent (/Users/sekkarri/repos/foodfinder/handlers/stateless.js:7:19)
+    at Handler.toIntent (/Users/sekkarri/repos/foodfinder/node_modules/jovo-framework/lib/handler.js:164:54)
+    at Jovo.toIntent (/Users/sekkarri/repos/foodfinder/node_modules/jovo-framework/lib/jovo.js:745:22)
+    at Jovo.LAUNCH (/Users/sekkarri/repos/foodfinder/handlers/stateless.js:3:10)
+    at Promise (/Users/sekkarri/repos/foodfinder/node_modules/jovo-framework/lib/handler.js:62:36)
+    at new Promise (<anonymous>)
+    at Handler.handle (/Users/sekkarri/repos/foodfinder/node_modules/jovo-framework/lib/handler.js:26:16)
+    at loadUserDataOnRequest.then.then.then.then.then.then (/Users/sekkarri/repos/foodfinder/node_modules/jovo-framework/lib/jovo.js:191:43)
+    at <anonymous>
+{
+	"version": "1.0",
+	"session": {
+		"new": false,
+		"sessionId": "amzn1.echo-api.session.b5101549-c78d-4906-844f-d84a8a41eaa9",
+		"application": {
+			"applicationId": "amzn1.ask.skill.691607f7-c30d-4534-8243-e24766af940e"
+		},
+		"user": {
+			"userId": "amzn1.ask.account.AGP7EH6RPDAV2ZYQZFRPYKP73OFRHJB4YZ75WG5S5CLUX6GWHQSAUPXZFMRW7FEVRCLL67GZRVF4UVIOT7TTG7FMVLIY2SKOIOLDR3XQSQMCRTF27UTKXRPG5XIZCEMLXMKU3AALRXFGLDA3VQ4N5FAQMPKWAH2FNF7FAKPD3OZBCKFMYW5ZVBYXEK5HG2YIET3BOFR5BESHZZA"
+		}
+	},
+	"context": {
+		"AudioPlayer": {
+			"playerActivity": "IDLE"
+		},
+		"Display": {},
+		"System": {
+			"application": {
+				"applicationId": "amzn1.ask.skill.691607f7-c30d-4534-8243-e24766af940e"
+			},
+			"user": {
+				"userId": "amzn1.ask.account.AGP7EH6RPDAV2ZYQZFRPYKP73OFRHJB4YZ75WG5S5CLUX6GWHQSAUPXZFMRW7FEVRCLL67GZRVF4UVIOT7TTG7FMVLIY2SKOIOLDR3XQSQMCRTF27UTKXRPG5XIZCEMLXMKU3AALRXFGLDA3VQ4N5FAQMPKWAH2FNF7FAKPD3OZBCKFMYW5ZVBYXEK5HG2YIET3BOFR5BESHZZA"
+			},
+			"device": {
+				"deviceId": "amzn1.ask.device.AGHBKIGQYS5KPCQSTEUFNI3QUH6BAQRC5RKKSWMK5VFFLSQJBZU6SDJHE7O5KHXKCFWG2FIWV767II3ATT4FOPNXY3MFEGZIXVGQ6LZWUDXNPV5FLFHUTC23UT5DWBFDIGKYJB7MUQ6UN4TG3YAOFOQJJDRA",
+				"supportedInterfaces": {
+					"AudioPlayer": {},
+					"Display": {
+						"templateVersion": "1.0",
+						"markupVersion": "1.0"
+					}
+				}
+			},
+			"apiEndpoint": "https://api.eu.amazonalexa.com",
+			"apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjY5MTYwN2Y3LWMzMGQtNDUzNC04MjQzLWUyNDc2NmFmOTQwZSIsImV4cCI6MTU0MjY0MDU4NiwiaWF0IjoxNTQyNjM2OTg2LCJuYmYiOjE1NDI2MzY5ODYsInByaXZhdGVDbGFpbXMiOnsiY29uc2VudFRva2VuIjpudWxsLCJkZXZpY2VJZCI6ImFtem4xLmFzay5kZXZpY2UuQUdIQktJR1FZUzVLUENRU1RFVUZOSTNRVUg2QkFRUkM1UktLU1dNSzVWRkZMU1FKQlpVNlNESkhFN081S0hYS0NGV0cyRklXVjc2N0lJM0FUVDRGT1BOWFkzTUZFR1pJWFZHUTZMWldVRFhOUFY1RkxGSFVUQzIzVVQ1RFdCRkRJR0tZSkI3TVVRNlVONFRHM1lBT0ZPUUpKRFJBIiwidXNlcklkIjoiYW16bjEuYXNrLmFjY291bnQuQUdQN0VINlJQREFWMlpZUVpGUlBZS1A3M09GUkhKQjRZWjc1V0c1UzVDTFVYNkdXSFFTQVVQWFpGTVJXN0ZFVlJDTEw2N0daUlZGNFVWSU9UN1RURzdGTVZMSVkyU0tPSU9MRFIzWFFTUU1DUlRGMjdVVEtYUlBHNVhJWkNFTUxYTUtVM0FBTFJYRkdMREEzVlE0TjVGQVFNUEtXQUgyRk5GN0ZBS1BEM09aQkNLRk1ZVzVaVkJZWEVLNUhHMllJRVQzQk9GUjVCRVNIWlpBIn19.ivU3p-f-U5x7BOC3aC5QkT5rsrJhCtQcYYNJhwjUMXlOyUCpZ5zd1pbzD_6_ttCEdMXUcNnFHur4gw0I6fCZFyANkKx7vMFqpb7MGxVH4YG1fSIKBKTuaAumw4mIQLSq3n9B10dHPtcxLNn2mAJXBXWoPqIwYVsjHR6yHOpVX8FN-fojYYIN-Ig3qRO4smAw0Qo1NC0_QBOBB4ap-uTw-t0AYh_hvVekuFAQYhFwI7ZXRBxLzM-EhH7vANVL0_YIvkfdRzQq8-Z0qiE5wI67UBKGyMO4jrX494cqxUCRVSs1AWRmp9GiUjQKBijEG-9NbTZvy7BycIqB_rPhNoFn5w"
+		},
+		"Viewport": {
+			"experiences": [
+				{
+					"arcMinuteWidth": 246,
+					"arcMinuteHeight": 144,
+					"canRotate": false,
+					"canResize": false
+				}
+			],
+			"shape": "RECTANGLE",
+			"pixelWidth": 1024,
+			"pixelHeight": 600,
+			"dpi": 160,
+			"currentPixelWidth": 1024,
+			"currentPixelHeight": 600,
+			"touch": [
+				"SINGLE"
+			]
+		}
+	},
+	"request": {
+		"type": "SessionEndedRequest",
+		"requestId": "amzn1.echo-api.request.bcccc7b8-39ac-4b7c-a27b-1097de1ddb22",
+		"timestamp": "2018-11-19T14:16:26Z",
+		"locale": "en-GB",
+		"reason": "ERROR",
+		"error": {
+			"type": "INVALID_RESPONSE",
+			"message": "An exception occurred while dispatching the request to the skill."
+		}
+	}
+}
+Error: Language resources have not been set for translation.
+    at Jovo.t (/Users/sekkarri/repos/foodfinder/node_modules/jovo-framework/lib/jovo.js:790:19)
+    at Jovo.END (/Users/sekkarri/repos/foodfinder/handlers/stateless.js:10:20)
+    at Promise (/Users/sekkarri/repos/foodfinder/node_modules/jovo-framework/lib/handler.js:62:36)
+    at new Promise (<anonymous>)
+    at Handler.handle (/Users/sekkarri/repos/foodfinder/node_modules/jovo-framework/lib/handler.js:26:16)
+    at loadUserDataOnRequest.then.then.then.then.then.then (/Users/sekkarri/repos/foodfinder/node_modules/jovo-framework/lib/jovo.js:191:43)
+    at <anonymous>

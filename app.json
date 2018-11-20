@@ -1,0 +1,8 @@
+{
+	"alexaSkill": {
+		"nlu": {
+			"name": "alexa"
+		}
+	},
+	"endpoint": "https://webhook.jovo.cloud/6f51434c-0ea1-4d80-b917-c0da3ee20983"
+}

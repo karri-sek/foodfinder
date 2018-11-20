@@ -1,28 +1,36 @@
 const yelpApiHelper = require("../utils/yelpApiHelper");
 const { getBestRestaurants } = require("../utils/getBestRestaurants");
+const noRestaurant = require("../handlers/NoRestaurantHandler");
 module.exports = {
   BusinessSearchIntent(recipe) {
     const userPrefLocation = this.getSessionAttribute("location");
-    console.log(" request ", recipe.value);
+    const recipeName = recipe.value;
+    this.setSessionAttribute("recipeName", recipeName);
+    console.log(" recipeName ", recipeName);
     console.log("location from session ", userPrefLocation);
 
     yelpApiHelper({
       location: userPrefLocation,
-      term: recipe.value,
+      term: recipeName,
       sort_by: "best_match"
     }).then(response => {
-      // Console.log("response from api ", response.data.businesses);
       const allRestaurants = response.data.businesses;
+      const namesSaid = [];
       if (allRestaurants.length > 0) {
-        const bestRestaurants = getBestRestaurants(response.data.businesses);
-        console.log("First best Restaurant ", bestRestaurants[0]);
+        this.setSessionAttribute("restaurants", allRestaurants);
+        const bestRestaurants = getBestRestaurants(allRestaurants);
+        console.log("no of best restaurants found ", bestRestaurants.length);
+        const restaurant = bestRestaurants[0];
+        console.log("First best Restaurant ", restaurant);
+        this.setSessionAttribute("namesSaid", namesSaid.push(restaurant));
         const speech = `How about ${
-          bestRestaurants[0].name
-        } restaurant . ask me to hear the details, or begin new search `;
-
-        const reprompt = "ask me to hear the details, or begin new search ";
-        // This.followUpState("NameState")
+          restaurant.name
+        } restaurant . Say hear the details, or more to go for next restaurant.`;
+        const reprompt =
+          "Say hear the details, or more to go for next restaurant or begin new search ";
         this.ask(speech, reprompt);
+      } else {
+        noRestaurant(this);
       }
     });
   }
