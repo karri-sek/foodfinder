@@ -28,9 +28,9 @@
         "where can i get this {recipe}",
         "I want {recipe}",
         "where can I get {recipe}",
-        "I want to get {recipe} from {restaurant}",
-        "I want to order {recipe} from {restaurant}",
-        "can you check is this {recipe} available from {restaurant}"
+        "I want to get {recipe}",
+        "I want to order {recipe}",
+        "can you check is this {recipe}"
       ],
       "inputs": [
         {

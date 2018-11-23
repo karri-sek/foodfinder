@@ -86,16 +86,6 @@
 				"userDefined": true,
 				"alias": "recipe",
 				"meta": "@sys.any"
-			},
-			{
-				"text": " from ",
-				"userDefined": false
-			},
-			{
-				"text": "restaurant",
-				"userDefined": true,
-				"alias": "restaurant",
-				"meta": "@sys.any"
 			}
 		],
 		"isTemplate": false,
@@ -112,16 +102,6 @@
 				"userDefined": true,
 				"alias": "recipe",
 				"meta": "@sys.any"
-			},
-			{
-				"text": " from ",
-				"userDefined": false
-			},
-			{
-				"text": "restaurant",
-				"userDefined": true,
-				"alias": "restaurant",
-				"meta": "@sys.any"
 			}
 		],
 		"isTemplate": false,
@@ -137,16 +117,6 @@
 				"text": "recipe",
 				"userDefined": true,
 				"alias": "recipe",
-				"meta": "@sys.any"
-			},
-			{
-				"text": " available from ",
-				"userDefined": false
-			},
-			{
-				"text": "restaurant",
-				"userDefined": true,
-				"alias": "restaurant",
 				"meta": "@sys.any"
 			}
 		],
