@@ -1,7 +1,7 @@
 {
 	"description": "",
 	"webhook": {
-		"url": "https://webhook.jovo.cloud/6f51434c-0ea1-4d80-b917-c0da3ee20983",
+		"url": "https://9gjpcv3dva.execute-api.eu-west-1.amazonaws.com/dev/foodpedia-dev",
 		"available": true
 	},
 	"language": "en",

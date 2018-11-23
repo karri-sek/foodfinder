@@ -1,21 +1,108 @@
 {
   "alexaSkill": {
+    "manifest": {
+      "publishingInformation": {
+        "locales": {
+          "en-GB": {
+            "summary": "foodpedia.uk gives you best restaurants you can choose to eat in or take away, a restaurant search personalised for you.",
+            "examplePhrases": [
+              "Alexa, Open FoodPedia",
+              "Alexa, tell foodpedia to search for fish and chips",
+              "Alexa, ask foodpedia get me the best restaurant near to me"
+            ],
+            "keywords": [
+              "foodpedia",
+              "food",
+              "fish and chips",
+              "restaurants",
+              "recipes",
+              "near to me"
+            ],
+            "name": "foodpedia",
+            "smallIconUri": "https://isrestaurantdesign.com/wp-content/uploads/2018/05/sioux-falls-restaurant-design-layout-planning.png",
+            "description": "Foodpedia \n\nWelcome to foodpedia Skill for Alexa, your online restaurant finder! Our search algorithms at Foodpedia trying out hundreds of restaurants and recipes to give you the best best restaurants to match your preferences.\n\nOnce you've enabled foodpedia, you can start by saying 'Alexa, open foodpedia'.",
+            "largeIconUri": "https://image.flaticon.com/icons/png/512/410/410370.png"
+          }
+        },
+        "isAvailableWorldwide": true,
+        "testingInstructions": "none",
+        "category": "RESTAURANT_BOOKING_INFO_AND_REVIEW",
+        "distributionCountries": []
+      },
+      "apis": {
+        "custom": {
+          "interfaces": []
+        }
+      },
+      "manifestVersion": "1.0",
+      "privacyAndCompliance": {
+        "allowsPurchases": false,
+        "locales": {
+          "en-GB": {
+            "privacyPolicyUrl": ""
+          }
+        },
+        "isExportCompliant": true,
+        "containsAds": false,
+        "isChildDirected": false,
+        "usesPersonalInfo": false
+      }
+    },
     "nlu": {
       "name": "alexa"
     },
-    "lang": {
-      "en": ["en-US", "en-GB"]
-    },
-    "skillId": "amzn1.ask.skill.691607f7-c30d-4534-8243-e24766af940e",
-    "askProfile": "sekhar-uk"
+    "skillId": "amzn1.ask.skill.b00c37f5-4237-4c59-9d9a-b4f54d90abef",
+    "askProfile": "default"
   },
   "googleAction": {
     "nlu": {
       "name": "dialogflow"
     },
-    "lang": {
-      "en": ["en-US", "en-GB"]
+    "dialogflow": {
+      "projectId": "foodpediaagent",
+      "keyFile": "googleServiceAccount.json"
     }
   },
-  "endpoint": "https://webhook.jovo.cloud/6f51434c-0ea1-4d80-b917-c0da3ee20983"
+  "defaultStage": "local",
+  "stages": {
+    "local": {
+      "endpoint": "https://webhook.jovo.cloud/07ff8ee3-221f-4a7b-b77c-7c0e875f673d"
+    },
+    "dev": {
+      "host": {
+        "lambda": {
+          "arn": "arn:aws:lambda:eu-west-1:254839603819:function:foodpedia-dev",
+          "askProfile": "default"
+        }
+      },
+      "alexaSkill": {
+        "skillId": "amzn1.ask.skill.b00c37f5-4237-4c59-9d9a-b4f54d90abef"
+      },
+      "googleAction": {
+        "dialogflow": {
+          "endpoint": "https://9gjpcv3dva.execute-api.eu-west-1.amazonaws.com/dev/foodpedia-dev",
+          "projectId": "foodpediaagent",
+          "keyFile": "googleServiceAccount.json"
+        }
+      }
+    },
+    "prod": {
+      "host": {
+        "lambda": {
+          "arn": "arn:aws:lambda:eu-west-1:254839603819:function:foodpedia-prod",
+          "askProfile": "default"
+        }
+      },
+      "alexaSkill": {
+        "skillId": "amzn1.ask.skill.b00c37f5-4237-4c59-9d9a-b4f54d90abef"
+      },
+      "googleAction": {
+        "dialogflow": {
+          "endpoint": "https://9gjpcv3dva.execute-api.eu-west-1.amazonaws.com/dev/foodpedia-dev",
+          "projectId": "foodpediaagent",
+          "keyFile": "googleServiceAccount.json"
+        }
+      }
+    }
+  }
 }
