@@ -37,7 +37,7 @@ custom:
   appid:
     dev: ${file(env.yml):APP_ID_DEV}
   profiles:
-    dev: sekhar-uk
+    dev: default
   regions:
     dev: eu-west-1
   languages:

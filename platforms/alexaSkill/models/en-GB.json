@@ -1,7 +1,7 @@
 {
 	"interactionModel": {
 		"languageModel": {
-			"invocationName": "food finder",
+			"invocationName": "foodpedia",
 			"types": [],
 			"intents": [
 				{
@@ -16,7 +16,7 @@
 					"slots": [
 						{
 							"name": "location",
-							"type": "AMAZON.EUROPE_CITY"
+							"type": "AMAZON.GB_CITY"
 						}
 					]
 				},
@@ -27,10 +27,7 @@
 						"place an order for this {recipe}",
 						"where can i get this {recipe}",
 						"I want {recipe}",
-						"where can I get {recipe}",
-						"I want to get {recipe} from {restaurant}",
-						"I want to order {recipe} from {restaurant}",
-						"can you check is this {recipe} available from {restaurant}"
+						"where can I get {recipe}"
 					],
 					"slots": [
 						{

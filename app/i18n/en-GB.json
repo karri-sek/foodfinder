@@ -1,8 +1,8 @@
 {
   "translation": {
-    "WELCOME": "Welcome to food finder, tell me your preferred location to search for best Restaurant.",
+    "WELCOME": "Welcome to foodpedia, tell me your preferred location to search for best Restaurant.",
     "WELCOME_WITH_PARAMETER": "Welcome {{firstname}} {{lastname}}",
     "WELCOME_ARRAY": ["Welcome", "Hey", "Hello"],
-    "GOODBYE_NOT_LINKED": "thanks for using the food finder,Please do account linking to set your preferences."
+    "GOODBYE_NOT_LINKED": "thanks for using the foodpedia, Please do account linking to set your preferences."
   }
 }

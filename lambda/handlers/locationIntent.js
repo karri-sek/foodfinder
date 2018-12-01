@@ -1,4 +1,4 @@
-const yelpApiHelper = require("../utils/yelpApiHelper");
+const yelpApiHelper = require("../../utils/yelpApiHelper");
 module.exports = {
   LocationIntent(location) {
     console.log("location ", location.value);

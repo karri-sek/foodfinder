@@ -1,5 +1,5 @@
 {
-  "invocation": "food finder",
+  "invocation": "foodpedia",
   "intents": [
     {
       "name": "LocationIntent",
@@ -14,7 +14,7 @@
         {
           "name": "location",
           "type": {
-            "alexa": "AMAZON.EUROPE_CITY",
+            "alexa": "AMAZON.GB_CITY",
             "dialogflow": "@sys.any"
           }
         }
@@ -27,10 +27,7 @@
         "place an order for this {recipe}",
         "where can i get this {recipe}",
         "I want {recipe}",
-        "where can I get {recipe}",
-        "I want to get {recipe} from {restaurant}",
-        "I want to order {recipe} from {restaurant}",
-        "can you check is this {recipe} available from {restaurant}"
+        "where can I get {recipe}"
       ],
       "inputs": [
         {

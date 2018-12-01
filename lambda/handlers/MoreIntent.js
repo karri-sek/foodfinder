@@ -1,5 +1,5 @@
 const lodash = require("lodash");
-const { getBestRestaurants } = require("../utils/getBestRestaurants");
+const { getBestRestaurants } = require("../../utils/getBestRestaurants");
 module.exports = {
   MoreIntent() {
     const restaurants = this.getSessionAttribute("restaurants");
@@ -9,6 +9,7 @@ module.exports = {
     const [restaurant] = bestRestaurants;
     console.log("Second best Restaurant ", restaurant);
     this.setSessionAttribute("namesSaid", namesSaid.push(restaurant));
+    this.setSessionAttribute("currentRes", restaurant);
     const speech = `How about ${
       restaurant.name
     } restaurant . Say hear the details, or more to go for next restaurant.`;

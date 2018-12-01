@@ -2,9 +2,29 @@
 	{
 		"data": [
 			{
-				"text": "recipe",
+				"text": "consider ",
+				"userDefined": false
+			},
+			{
+				"text": "location",
 				"userDefined": true,
-				"alias": "recipe",
+				"alias": "location",
+				"meta": "@sys.any"
+			},
+			{
+				"text": " as my preferred location",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "location",
+				"userDefined": true,
+				"alias": "location",
 				"meta": "@sys.any"
 			}
 		],
@@ -14,13 +34,29 @@
 	{
 		"data": [
 			{
-				"text": "place an order for this ",
+				"text": "location",
+				"userDefined": true,
+				"alias": "location",
+				"meta": "@sys.any"
+			},
+			{
+				"text": " is my preferred location",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "please search in this ",
 				"userDefined": false
 			},
 			{
-				"text": "recipe",
+				"text": "location",
 				"userDefined": true,
-				"alias": "recipe",
+				"alias": "location",
 				"meta": "@sys.any"
 			}
 		],
@@ -30,45 +66,13 @@
 	{
 		"data": [
 			{
-				"text": "where can i get this ",
+				"text": "I would like to search in this ",
 				"userDefined": false
 			},
 			{
-				"text": "recipe",
+				"text": "location",
 				"userDefined": true,
-				"alias": "recipe",
-				"meta": "@sys.any"
-			}
-		],
-		"isTemplate": false,
-		"count": 0
-	},
-	{
-		"data": [
-			{
-				"text": "I want ",
-				"userDefined": false
-			},
-			{
-				"text": "recipe",
-				"userDefined": true,
-				"alias": "recipe",
-				"meta": "@sys.any"
-			}
-		],
-		"isTemplate": false,
-		"count": 0
-	},
-	{
-		"data": [
-			{
-				"text": "where can I get ",
-				"userDefined": false
-			},
-			{
-				"text": "recipe",
-				"userDefined": true,
-				"alias": "recipe",
+				"alias": "location",
 				"meta": "@sys.any"
 			}
 		],

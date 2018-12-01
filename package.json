@@ -1,11 +1,12 @@
 {
-  "name": "Foodpedia",
+  "name": "foodpedia",
   "version": "0.0.1",
-  "description": "Foodpedia search the restaurants",
+  "description": "Foodpedia search the restaurants based on your preferences",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "ud:dev": "serverless deploy function -f funcOne --stage dev && jovo build --stage dev && jovo deploy --stage dev --target model",
+    "ud:dd": "serverless deploy function -f funcOne --stage dev && jovo build --stage dev && jovo deploy --stage dev --target model",
+    "ud:dev": "jovo build --stage dev && jovo deploy --stage dev --target model",
     "ul": "jovo build && jovo deploy",
     "local": "jovo run -w"
   },
@@ -31,6 +32,8 @@
   "dependencies": {
     "ask-cli": "^1.5.1",
     "axios": "^0.18.0",
+    "babel-preset-node6": "^11.0.0",
+    "babel-preset-node8": "^1.2.0",
     "i18next-sprintf-postprocessor": "^0.2.2",
     "jovo-framework": "^1.4.16",
     "serverless-plugin-optimize": "^4.0.2-rc.1",
