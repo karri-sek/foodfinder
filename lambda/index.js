@@ -7,6 +7,9 @@ const moreHandler = require("./handlers/MoreIntent");
 const nameState = require("../states/name");
 const sprintf = "i18next-sprintf-postprocessor";
 const gb = require("../app/i18n/en-GB.json");
+const hearDetailsHandler = require("./handlers/HearDetailsIntent");
+const { Webhook } = require("jovo-framework");
+
 const languageResources = {
   "en-GB": gb
 };
@@ -34,12 +37,9 @@ app.setHandler(
   locationHandler,
   nameState,
   businessSearchHandler,
-  moreHandler
+  moreHandler,
+  hearDetailsHandler
 );
-
-"use strict";
-
-const { Webhook } = require("jovo-framework");
 
 // =================================================================================
 // Server Configuration

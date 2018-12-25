@@ -1,91 +1,91 @@
 {
-	"interactionModel": {
-		"languageModel": {
-			"invocationName": "foodpedia",
-			"types": [],
-			"intents": [
-				{
-					"name": "LocationIntent",
-					"samples": [
-						"consider {location} as my preferred location",
-						"{location}",
-						"{location} is my preferred location",
-						"please search in this {location}",
-						"I would like to search in this {location}"
-					],
-					"slots": [
-						{
-							"name": "location",
-							"type": "AMAZON.US_CITY"
-						}
-					]
-				},
-				{
-					"name": "BusinessSearchIntent",
-					"samples": [
-						"{recipe}",
-						"place an order for this {recipe}",
-						"where can i get this {recipe}",
-						"I want {recipe}",
-						"where can I get {recipe}",
-						"I want to get {recipe}",
-						"I want to order {recipe}",
-						"can you check is this {recipe}"
-					],
-					"slots": [
-						{
-							"name": "recipe",
-							"type": "AMAZON.Food"
-						},
-						{
-							"name": "restaurant",
-							"type": "AMAZON.SearchQuery"
-						}
-					]
-				},
-				{
-					"name": "MoreIntent",
-					"samples": [
-						"go for more",
-						"more restaurants",
-						"go to next restaurant",
-						"next",
-						"next restaurant",
-						"more for next restaurant",
-						"more"
-					]
-				},
-				{
-					"name": "HearDetails",
-					"samples": [
-						"love to hear this {restaurant} details",
-						"I would like to hear more details on this {restaurant}",
-						"tell me more details about this {restaurant}",
-						"{restaurant} details",
-						"tell me more about this {restaurant}",
-						"Hear details",
-						"Hear the details"
-					],
-					"slots": [
-						{
-							"name": "restaurant",
-							"type": "AMAZON.SearchQuery"
-						}
-					]
-				},
-				{
-					"name": "AMAZON.CancelIntent",
-					"samples": []
-				},
-				{
-					"name": "AMAZON.HelpIntent",
-					"samples": []
-				},
-				{
-					"name": "AMAZON.StopIntent",
-					"samples": []
-				}
-			]
-		}
-	}
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "foodpedia",
+      "types": [],
+      "intents": [
+        {
+          "name": "LocationIntent",
+          "samples": [
+            "consider {location} as my preferred location",
+            "{location}",
+            "{location} is my preferred location",
+            "please search in this {location}",
+            "I would like to search in this {location}"
+          ],
+          "slots": [
+            {
+              "name": "location",
+              "type": "AMAZON.City"
+            }
+          ]
+        },
+        {
+          "name": "BusinessSearchIntent",
+          "samples": [
+            "{recipe}",
+            "place an order for this {recipe}",
+            "where can i get this {recipe}",
+            "I want {recipe}",
+            "where can I get {recipe}",
+            "I want to get {recipe}",
+            "I want to order {recipe}",
+            "can you check is this {recipe}"
+          ],
+          "slots": [
+            {
+              "name": "recipe",
+              "type": "AMAZON.Food"
+            },
+            {
+              "name": "restaurant",
+              "type": "AMAZON.SearchQuery"
+            }
+          ]
+        },
+        {
+          "name": "MoreIntent",
+          "samples": [
+            "go for more",
+            "more restaurants",
+            "go to next restaurant",
+            "next",
+            "next restaurant",
+            "more for next restaurant",
+            "more"
+          ]
+        },
+        {
+          "name": "HearDetails",
+          "samples": [
+            "love to hear this {restaurant} details",
+            "I would like to hear more details on this {restaurant}",
+            "tell me more details about this {restaurant}",
+            "{restaurant} details",
+            "tell me more about this {restaurant}",
+            "Hear details",
+            "Hear the details"
+          ],
+          "slots": [
+            {
+              "name": "restaurant",
+              "type": "AMAZON.SearchQuery"
+            }
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        }
+      ]
+    }
+  }
 }

@@ -1,0 +1,118 @@
+OK. Here are the more details. It is located at {{postcode}} postcode and ", <say-as interpret-as="telephone">{{cnumber}} is the contact number. I've send that details to your email and Alexa app.Would you like to hear it again, start order or find another restaurant.",
+{
+	"body": {
+		"version": "1.0",
+		"response": {
+			"outputSpeech": {
+				"type": "SSML",
+				"ssml": "<speak>OK. Here are the more details. It is located at WC2H 9FB postcode and +442074209320 is the contact number. I've send that details to your email and Alexa app.</speak>"
+			},
+			"reprompt": {
+				"outputSpeech": {
+					"type": "SSML",
+					"ssml": "<speak>OK. Here are the more details. It is located at WC2H 9FB postcode and +442074209320 is the contact number. I've send that details to your email and Alexa app.</speak>"
+				}
+			},
+			"shouldEndSession": false
+		},
+		"sessionAttributes": {
+			"recipeName": "curry",
+			"HDRes": {
+				"id": "oK_SLmmAVQg3meguh7LrIA",
+				"alias": "dishoom-london",
+				"name": "Dishoom",
+				"image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/povGSvOYjlYovHgXEDQXsA/o.jpg",
+				"is_claimed": true,
+				"is_closed": false,
+				"url": "https://www.yelp.com/biz/dishoom-london?adjust_creative=umRkXeoyNNeSMjMu3Kaklg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_lookup&utm_source=umRkXeoyNNeSMjMu3Kaklg",
+				"phone": "+442074209320",
+				"display_phone": "+44 20 7420 9320",
+				"review_count": 1520,
+				"categories": [
+					{
+						"alias": "indpak",
+						"title": "Indian"
+					}
+				],
+				"rating": 4.5,
+				"location": {
+					"address1": "12 Upper Saint Martin's Lane",
+					"address2": "",
+					"address3": "",
+					"city": "London",
+					"zip_code": "WC2H 9FB",
+					"country": "GB",
+					"state": "XGL",
+					"display_address": [
+						"12 Upper Saint Martin's Lane",
+						"London WC2H 9FB",
+						"United Kingdom"
+					],
+					"cross_streets": ""
+				},
+				"coordinates": {
+					"latitude": 51.512447030091,
+					"longitude": -0.1269579217873
+				},
+				"photos": [
+					"https://s3-media2.fl.yelpcdn.com/bphoto/povGSvOYjlYovHgXEDQXsA/o.jpg",
+					"https://s3-media3.fl.yelpcdn.com/bphoto/n1Pne_CqREKXj-RCudG8mg/o.jpg",
+					"https://s3-media2.fl.yelpcdn.com/bphoto/S9_rMdbKv2HIZWRWY7gYlQ/o.jpg"
+				],
+				"price": "££",
+				"hours": [
+					{
+						"open": [
+							{
+								"is_overnight": false,
+								"start": "0800",
+								"end": "2300",
+								"day": 0
+							},
+							{
+								"is_overnight": false,
+								"start": "0800",
+								"end": "2300",
+								"day": 1
+							},
+							{
+								"is_overnight": false,
+								"start": "0800",
+								"end": "2300",
+								"day": 2
+							},
+							{
+								"is_overnight": false,
+								"start": "0800",
+								"end": "2300",
+								"day": 3
+							},
+							{
+								"is_overnight": false,
+								"start": "0800",
+								"end": "0000",
+								"day": 4
+							},
+							{
+								"is_overnight": false,
+								"start": "0900",
+								"end": "0000",
+								"day": 5
+							},
+							{
+								"is_overnight": false,
+								"start": "0900",
+								"end": "2300",
+								"day": 6
+							}
+						],
+						"hours_type": "REGULAR",
+						"is_open_now": true
+					}
+				],
+				"transactions": []
+			},
+			"location": "London"
+		}
+	}
+}

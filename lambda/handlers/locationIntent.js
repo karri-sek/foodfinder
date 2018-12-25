@@ -1,11 +1,11 @@
-const yelpApiHelper = require("../../utils/yelpApiHelper");
+const { callYelpApi } = require("../../utils/yelpApiHelper");
 module.exports = {
   LocationIntent(location) {
     console.log("location ", location.value);
     const searchLocation = location.value;
     this.setSessionAttribute("location", searchLocation);
     if (searchLocation) {
-      yelpApiHelper({ location: searchLocation }).then(response => {
+      callYelpApi({ location: searchLocation }).then(response => {
         const totalCount = response.data.total;
         console.log("totalCount ", totalCount);
 

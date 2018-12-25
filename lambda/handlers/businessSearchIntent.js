@@ -1,37 +1,36 @@
-const yelpApiHelper = require("../../utils/yelpApiHelper");
+const { callYelpApi } = require("../../utils/yelpApiHelper");
 const { getBestRestaurants } = require("../../utils/getBestRestaurants");
 const noRestaurant = require("../handlers/NoRestaurantHandler");
+const SORT_BY = "best_match";
 module.exports = {
   BusinessSearchIntent(recipe) {
-    const userPrefLocation = this.getSessionAttribute("location");
-    const recipeName = recipe.value;
-    this.setSessionAttribute("recipeName", recipeName);
-    console.log(" recipeName ", recipeName);
-    console.log("location from session ", userPrefLocation);
+    const location = this.getSessionAttribute("location");
+    const rName = recipe.value;
+    this.setSessionAttribute("recipeName", rName);
+    console.log("recipeName ", rName);
+    console.log("location from session ", location);
 
-    yelpApiHelper({
-      location: userPrefLocation,
-      term: recipeName,
-      sort_by: "best_match"
-    }).then(response => {
-      const allRestaurants = response.data.businesses;
-      const namesSaid = [];
-      if (allRestaurants.length > 0) {
-        this.setSessionAttribute("restaurants", allRestaurants);
-        const bestRestaurants = getBestRestaurants(allRestaurants);
-        const restaurant = bestRestaurants[0];
-        console.log("First best Restaurant ", restaurant);
-        this.setSessionAttribute("namesSaid", namesSaid.push(restaurant));
-        this.setSessionAttribute("currentRes", restaurant);
-        const speech = `How about ${
-          restaurant.name
-        } restaurant . Say hear the details, or more to go for next restaurant.`;
-        const reprompt =
-          "Say hear the details, or more to go for next restaurant or begin new search ";
-        this.ask(speech, reprompt);
-      } else {
-        noRestaurant(this);
+    callYelpApi(getYelpParams(location, rName)).then(res => {
+      const { total } = res.data;
+      console.log("total : ", total);
+      const fRes = getFirstResturant(res.data);
+      this.setSessionAttribute("fRes", fRes);
+      if (total > 1) {
+        this.ask(this.t("FOUND_MORE_RES", getMsgParams(total, fRes, rName)));
       }
     });
   }
 };
+
+const getFirstResturant = sRes => sRes.businesses[0];
+const getMsgParams = (total, fRes, rName) => ({
+  n_restaurants: total,
+  search_term: rName,
+  res_name: fRes.name
+});
+
+const getYelpParams = (location, term) => ({
+  location,
+  term,
+  sort_by: SORT_BY
+});
