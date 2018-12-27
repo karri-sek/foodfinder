@@ -1,14 +1,10 @@
 const { callYelpApi } = require("../../utils/yelpApiHelper");
-const conf = require("../../config/config");
-const zomato = require("zomato");
 const sl = require("../../config/stringLiterals");
-const client = zomato.createClient({
-  userKey: conf.zomato_key
-});
+const { getZomatoClient } = require("../../utils/cUtils");
 module.exports = {
   LocationIntent(location) {
     const sLoc = location.value;
-    console.log("location ", sLoc);
+    console.log("location:", sLoc);
     this.setSessionAttribute("location", sLoc);
     switch (this.requestObj.request.locale) {
       case sl.en_IN:
@@ -33,13 +29,15 @@ const passRes = (ref, { data }, sLoc) => {
     ref.ask(ref.t("NO_RES_LOCATION", getParams(data, sLoc)));
   }
 };
+
 const handleRequest = (ref, sLoc) => {
-  client.getCities({ q: sLoc }, (err, result) => {
+  getZomatoClient().getCities({ q: sLoc }, (err, result) => {
     console.log(result);
     console.log(err);
     ref.ask(ref.t("ASK_FOR_RECIPE", { sLoc }));
   });
 };
+
 const getParams = ({ total }, sLoc) => ({
   rCount: total,
   word: total > 1 ? sl.P_RES : sl.RES,

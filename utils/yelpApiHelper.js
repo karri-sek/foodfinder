@@ -1,6 +1,7 @@
 const axios = require("axios");
 const config = require("../config/config");
-axios.defaults.headers.common.Authorization = config.accessToken;
+const keys = require("../config/keys");
+axios.defaults.headers.common.Authorization = keys.accessToken;
 
 const callYelpApi = inputParams => {
   if (!inputParams) throw Error("Sorry I need input params to call API");
