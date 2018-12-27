@@ -14,7 +14,7 @@
         {
           "name": "location",
           "type": {
-            "alexa": "AMAZON.CITY",
+            "alexa": "AMAZON.City",
             "dialogflow": "@sys.any"
           }
         }

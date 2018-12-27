@@ -1,24 +1,47 @@
 const { callYelpApi } = require("../../utils/yelpApiHelper");
+const conf = require("../../config/config");
+const zomato = require("zomato");
+const sl = require("../../config/stringLiterals");
+const client = zomato.createClient({
+  userKey: conf.zomato_key
+});
 module.exports = {
   LocationIntent(location) {
-    console.log("location ", location.value);
-    const searchLocation = location.value;
-    this.setSessionAttribute("location", searchLocation);
-    if (searchLocation) {
-      callYelpApi({ location: searchLocation }).then(response => {
-        const totalCount = response.data.total;
-        console.log("totalCount ", totalCount);
-
-        if (totalCount > 0) {
-          const speech = `I found ${totalCount} restaurants in ${searchLocation} location.
-                Now, you tell me the recipe name, for a best restaurant match`;
-
-          const reprompt =
-            "tell me the recipe name, for a best restaurant match";
-          // This.followUpState("NameState")
-          this.ask(speech, reprompt);
-        }
-      });
+    const sLoc = location.value;
+    console.log("location ", sLoc);
+    this.setSessionAttribute("location", sLoc);
+    switch (this.requestObj.request.locale) {
+      case sl.en_IN:
+        handleRequest(this, sLoc);
+        break;
+      case sl.en_GB:
+        callYelpApi({ location: sLoc }).then(res => passRes(this, res, sLoc));
+        break;
+      case sl.en_US:
+        handleRequest(this, sLoc);
+        break;
+      default:
+        console.log("you should not be here!!!");
     }
   }
 };
+
+const passRes = (ref, { data }, sLoc) => {
+  if (data.total > 0) {
+    ref.ask(ref.t("LOCATION_RES_SEARCH", getParams(data, sLoc)));
+  } else {
+    ref.ask(ref.t("NO_RES_LOCATION", getParams(data, sLoc)));
+  }
+};
+const handleRequest = (ref, sLoc) => {
+  client.getCities({ q: sLoc }, (err, result) => {
+    console.log(result);
+    console.log(err);
+    ref.ask(ref.t("ASK_FOR_RECIPE", { sLoc }));
+  });
+};
+const getParams = ({ total }, sLoc) => ({
+  rCount: total,
+  word: total > 1 ? sl.P_RES : sl.RES,
+  sLoc
+});

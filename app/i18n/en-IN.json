@@ -4,14 +4,14 @@
     "WELCOME_WITH_PARAMETER": "Welcome {{firstname}} {{lastname}}",
     "WELCOME_ARRAY": ["Welcome", "Hey", "Hello"],
     "GOODBYE_NOT_LINKED": "thanks for using the foodpedia, Please do account linking to set your preferences.",
-    "FOUND_MORE_RES": "I've found {{n_restaurants}} restaurants, for {{search_term}}. First up is {{res_name}}. Say 'Hear the details' to listen the details, or say 'next' to the next best restaurant?",
+    "FOUND_MORE_RES": "I've found {{n_restaurants}} restaurants, for {{search_term}}. First up is {{res_name}}. Would you like to listen to the details, or go to the next restaurant?",
     "HEAR_DETAILS": "Here we go. This restaurant has {{rating}} rating, and {{rcount}} reviews. Would you like to hear the more details, start order, or save this restaurant for next time",
     "A_MORE_DETAILS": "OK. Here are the more details. It is located at <say-as interpret-as='address'>{{postcode}} </say-as> postcode. <say-as interpret-as='telephone'> {{cnumber}} </say-as> is the contact number. I've send that details to your email and Alexa app. Would you like to hear it again, start order or find another restaurant.",
     "NA_MORE_DETAILS": "OK. Here are the more details. It is located at {{postcode}} postcode and {{cnumber}} is the contact number. I've send that details to your Alexa app. Would you like to hear it again, start order or find another restaurant",
     "GO_FOR_NEXT_RES": "OK. Say another restaurant to hear the details or Say goodbye to close this skill.",
     "YES_MORE_DETAILS": "<say-as interpret-as='telephone'> {{cnumber}} </say-as> is the contact number. And it is located at <say-as interpret-as='address'>{{address}}</say-as> postcode. Say another restaurant to hear the details or Say goodbye to close this skill.",
-    "LOCATION_RES_SEARCH": "I've found {{rCount}} {{word}} in {{sLocation}}. Now, you tell me the recipe name, for a best restaurant match.",
+    "LOCATION_RES_SEARCH": "I've found {{rCount}} {{word}} in {{sLocation}}. Now, tell me the recipe name, for a best restaurant match.",
     "NO_RES_LOCATION": "I'm sorry, I did not find any restaurants at {{sLocation}}.",
-    "EXCEED_POP_RES": "Please do account linking, to receive the next 5 best restaurants through email. However, those are the best restaurants, I can serve at this moment. Say 'search again' to start a new search."
+    "ASK_FOR_RECIPE": "OK, {{sLocation}}, Now, tell me the recipe name, for a best restaurant match."
   }
 }

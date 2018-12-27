@@ -32,8 +32,7 @@
 		"apis": {
 			"custom": {
 				"endpoint": {
-					"sslCertificateType": "Wildcard",
-					"uri": "https://webhook.jovo.cloud/07ff8ee3-221f-4a7b-b77c-7c0e875f673d"
+					"uri": "arn:aws:lambda:eu-west-1:254839603819:function:foodpedia-dev"
 				},
 				"interfaces": []
 			}

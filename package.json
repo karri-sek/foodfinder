@@ -36,8 +36,10 @@
     "babel-preset-node8": "^1.2.0",
     "i18next-sprintf-postprocessor": "^0.2.2",
     "jovo-framework": "^1.4.16",
+    "mailgun-js": "^0.22.0",
     "serverless-plugin-optimize": "^4.0.2-rc.1",
-    "serverless-plugin-scripts": "^1.0.2"
+    "serverless-plugin-scripts": "^1.0.2",
+    "zomato": "^1.1.0"
   },
   "devDependencies": {
     "ngrok": "^3.1.0",

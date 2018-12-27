@@ -1,7 +1,6 @@
 const { callYelpApi } = require("../../utils/yelpApiHelper");
-const { getBestRestaurants } = require("../../utils/getBestRestaurants");
-const noRestaurant = require("../handlers/NoRestaurantHandler");
-const SORT_BY = "best_match";
+const _ = require("lodash");
+const cUtils = require("../../utils/cUtils");
 module.exports = {
   BusinessSearchIntent(recipe) {
     const location = this.getSessionAttribute("location");
@@ -10,11 +9,12 @@ module.exports = {
     console.log("recipeName ", rName);
     console.log("location from session ", location);
 
-    callYelpApi(getYelpParams(location, rName)).then(res => {
+    callYelpApi(cUtils.getYelpParams(location, rName)).then(res => {
       const { total } = res.data;
       console.log("total : ", total);
-      const fRes = getFirstResturant(res.data);
+      const fRes = cUtils.getShuffleRes(res.data);
       this.setSessionAttribute("fRes", fRes);
+      this.setSessionAttribute("popRes", 1);
       if (total > 1) {
         this.ask(this.t("FOUND_MORE_RES", getMsgParams(total, fRes, rName)));
       }
@@ -22,15 +22,8 @@ module.exports = {
   }
 };
 
-const getFirstResturant = sRes => sRes.businesses[0];
 const getMsgParams = (total, fRes, rName) => ({
   n_restaurants: total,
   search_term: rName,
   res_name: fRes.name
-});
-
-const getYelpParams = (location, term) => ({
-  location,
-  term,
-  sort_by: SORT_BY
 });

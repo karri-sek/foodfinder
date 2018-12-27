@@ -116,3 +116,10 @@ OK. Here are the more details. It is located at {{postcode}} postcode and ", <sa
 		}
 	}
 }
+
+,
+  intentMap: {
+    "AMAZON.StopIntent": "END",
+    "AMAZON.YesIntent": "YesIntent",
+    "AMAZON.NoIntent": "NoIntent"
+  }

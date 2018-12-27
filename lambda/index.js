@@ -4,6 +4,7 @@ const stateless = require("./handlers/stateless");
 const locationHandler = require("./handlers/locationIntent");
 const businessSearchHandler = require("./handlers/businessSearchIntent");
 const moreHandler = require("./handlers/MoreIntent");
+const nextHandler = require("./handlers/nextIntent");
 const nameState = require("../states/name");
 const sprintf = "i18next-sprintf-postprocessor";
 const gb = require("../app/i18n/en-GB.json");
@@ -28,6 +29,12 @@ const config = {
     returnNull: false,
     fallbackLng: "en-GB",
     resources: languageResources
+  },
+  intentMap: {
+    "AMAZON.StopIntent": "END",
+    "AMAZON.YesIntent": "YesIntent",
+    "AMAZON.NoIntent": "NoIntent",
+    "AMAZON.NextIntent": "NextIntent"
   }
 };
 
@@ -38,7 +45,8 @@ app.setHandler(
   nameState,
   businessSearchHandler,
   moreHandler,
-  hearDetailsHandler
+  hearDetailsHandler,
+  nextHandler
 );
 
 // =================================================================================

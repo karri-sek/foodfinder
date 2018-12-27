@@ -62,8 +62,7 @@
       "name": "HearDetails",
       "phrases": [
         "love to hear this {restaurant} details",
-        "I would like to hear more details on this {restaurant}",
-        "tell me more details about this {restaurant}",
+        "I would like to hear the details on this {restaurant}",
         "{restaurant} details",
         "tell me more about this {restaurant}",
         "Hear details",
@@ -94,6 +93,14 @@
           },
           {
             "name": "AMAZON.StopIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.YesIntent",
+            "samples": []
+          },
+          {
+            "name": "AMAZON.NoIntent",
             "samples": []
           }
         ]
