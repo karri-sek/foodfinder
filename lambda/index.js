@@ -5,6 +5,7 @@ const locationHandler = require("./handlers/locationIntent");
 const businessSearchHandler = require("./handlers/businessSearchIntent");
 const moreHandler = require("./handlers/MoreIntent");
 const nextHandler = require("./handlers/nextIntent");
+const stopHandler = require("./handlers/stopIntent");
 const nameState = require("../states/name");
 const sprintf = "i18next-sprintf-postprocessor";
 const gb = require("../app/i18n/en-GB.json");
@@ -31,7 +32,7 @@ const config = {
     resources: languageResources
   },
   intentMap: {
-    "AMAZON.StopIntent": "END",
+    "AMAZON.StopIntent": "StopIntent",
     "AMAZON.YesIntent": "YesIntent",
     "AMAZON.NoIntent": "NoIntent",
     "AMAZON.NextIntent": "NextIntent"
@@ -46,20 +47,21 @@ app.setHandler(
   businessSearchHandler,
   moreHandler,
   hearDetailsHandler,
-  nextHandler
+  nextHandler,
+  stopHandler
 );
 
 // =================================================================================
 // Server Configuration
 // =================================================================================
 
-const port = process.env.PORT || 3000;
+/* Const port = process.env.PORT || 3000;
 Webhook.listen(port, () => {
   console.log(`Example server listening on port ${port}!`);
 });
 Webhook.post("/webhook", (req, res) => {
   app.handleWebhook(req, res);
-});
+}); */
 
 exports.handler = (event, context, callback) => {
   app.handleLambda(event, context, callback);

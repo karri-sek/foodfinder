@@ -56,7 +56,27 @@
 					],
 					"name": "foodpedia",
 					"smallIconUri": "https://s3-eu-west-1.amazonaws.com/foodpedia/small.png",
-					"description": "Foodpedia \n\nWelcome to foodpedia Skill for Alexa, your online restaurant finder! Our search algorithms at Foodpedia trying out hundreds of restaurants and recipes to give you the best best restaurants to match your preferences.\n\nOnce you've enabled foodpedia, you can start by saying 'Alexa, open foodpedia'.",
+					"description": "Foodpedia \n\nWelcome to foodpedia Skill for Alexa, your online restaurant finder! Our search algorithms at Foodpedia trying out hundreds of restaurants and recipes to give you the best best restaurants to match your recipe preferences.\n\nOnce you've enabled foodpedia, you can start by saying 'Alexa, open foodpedia'.",
+					"largeIconUri": "https://s3-eu-west-1.amazonaws.com/foodpedia/big.png"
+				},
+				"en-IN": {
+					"summary": "foodpedia.uk gives you best restaurants you can choose to eat in or take away, a restaurant search personalised for you.",
+					"examplePhrases": [
+						"Alexa, open foodpedia",
+						"Alexa, tell foodpedia to search for fish and chips",
+						"Alexa, ask foodpedia get the best restaurants near to me"
+					],
+					"keywords": [
+						"foodpedia",
+						"food",
+						"fish and chips",
+						"restaurants",
+						"recipes",
+						"near to me"
+					],
+					"name": "foodpedia",
+					"smallIconUri": "https://s3-eu-west-1.amazonaws.com/foodpedia/small.png",
+					"description": "Foodpedia \n\nWelcome to foodpedia Skill for Alexa, your online restaurant finder! Our search algorithms at Foodpedia trying out hundreds of restaurants and recipes to give you the best best restaurants to match your recipe preferences.\n\nOnce you've enabled foodpedia, you can start by saying 'Alexa, open foodpedia'.",
 					"largeIconUri": "https://s3-eu-west-1.amazonaws.com/foodpedia/big.png"
 				}
 			},
@@ -70,6 +90,9 @@
 			"allowsPurchases": false,
 			"locales": {
 				"en-GB": {
+					"privacyPolicyUrl": ""
+				},
+				"en-IN": {
 					"privacyPolicyUrl": ""
 				}
 			},

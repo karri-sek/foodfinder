@@ -1,6 +1,7 @@
 const { callYelpApi } = require("../../utils/yelpApiHelper");
 const _ = require("lodash");
 const cUtils = require("../../utils/cUtils");
+
 module.exports = {
   BusinessSearchIntent(recipe) {
     const location = this.getSessionAttribute("location");
@@ -16,14 +17,10 @@ module.exports = {
       this.setSessionAttribute("fRes", fRes);
       this.setSessionAttribute("popRes", 1);
       if (total > 1) {
-        this.ask(this.t("FOUND_MORE_RES", getMsgParams(total, fRes, rName)));
+        this.ask(
+          this.t("FOUND_MORE_RES", cUtils.getMsgParams(total, fRes, rName))
+        );
       }
     });
   }
 };
-
-const getMsgParams = (total, fRes, rName) => ({
-  n_restaurants: total,
-  search_term: rName,
-  res_name: fRes.name
-});

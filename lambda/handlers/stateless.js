@@ -8,5 +8,8 @@ module.exports = {
   },
   END() {
     this.tell(this.t("GOODBYE_NOT_LINKED"));
+  },
+  NewSearchIntent() {
+    this.toIntent("WelcomeIntent");
   }
 };

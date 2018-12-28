@@ -22,23 +22,7 @@
 	{
 		"data": [
 			{
-				"text": "I would like to hear more details on this ",
-				"userDefined": false
-			},
-			{
-				"text": "restaurant",
-				"userDefined": true,
-				"alias": "restaurant",
-				"meta": "@sys.any"
-			}
-		],
-		"isTemplate": false,
-		"count": 0
-	},
-	{
-		"data": [
-			{
-				"text": "tell me more details about this ",
+				"text": "I would like to hear the details on this ",
 				"userDefined": false
 			},
 			{

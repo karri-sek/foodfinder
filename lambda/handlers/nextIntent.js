@@ -12,7 +12,7 @@ module.exports = {
         this.setSessionAttribute("fRes", fRes);
         this.setSessionAttribute("popRes", popResCount + 1);
         if (total > 1) {
-          this.ask(this.t("FOUND_MORE_RES", getMsgParams(total, fRes, rName)));
+          this.ask(this.t("NEXT_RES", cUtils.getNextParams(fRes.name)));
         }
       });
     } else {

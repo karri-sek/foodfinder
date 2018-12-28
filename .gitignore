@@ -2,3 +2,4 @@ node_modules/
 db/
 googleServiceAccount.json
 config/keys.js
+env.yml
