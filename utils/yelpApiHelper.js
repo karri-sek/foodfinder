@@ -1,6 +1,8 @@
 const axios = require("axios");
 const config = require("../config/config");
 const keys = require("../config/keys");
+const cUtils = require("../utils/cUtils");
+
 axios.defaults.headers.common.Authorization = keys.accessToken;
 
 const callYelpApi = inputParams => {
@@ -14,5 +16,19 @@ const getBDetails = id => {
   const url = config.bDetailsURL + id;
   return axios.get(url);
 };
+const sayFirstResult = (thisRef, location, rName) => {
+  callYelpApi(cUtils.getYelpParams(location, rName)).then(res => {
+    const { total } = res.data;
+    const fRes = cUtils.getShuffleRes(res.data);
+    thisRef.setSessionAttribute("fRes", fRes);
+    thisRef.setSessionAttribute("popRes", 1);
+    if (total > 1) {
+      thisRef.ask(
+        thisRef.t("FOUND_MORE_RES", cUtils.getMsgParams(total, fRes, rName))
+      );
+    }
+  });
+};
 module.exports = { callYelpApi,
-getBDetails };
+getBDetails,
+sayFirstResult };

@@ -2,36 +2,6 @@
 	{
 		"data": [
 			{
-				"text": "go for more",
-				"userDefined": false
-			}
-		],
-		"isTemplate": false,
-		"count": 0
-	},
-	{
-		"data": [
-			{
-				"text": "more restaurants",
-				"userDefined": false
-			}
-		],
-		"isTemplate": false,
-		"count": 0
-	},
-	{
-		"data": [
-			{
-				"text": "go to next restaurant",
-				"userDefined": false
-			}
-		],
-		"isTemplate": false,
-		"count": 0
-	},
-	{
-		"data": [
-			{
 				"text": "next",
 				"userDefined": false
 			}
@@ -42,7 +12,7 @@
 	{
 		"data": [
 			{
-				"text": "next restaurant",
+				"text": "next please",
 				"userDefined": false
 			}
 		],
@@ -52,7 +22,7 @@
 	{
 		"data": [
 			{
-				"text": "more for next restaurant",
+				"text": "go for next",
 				"userDefined": false
 			}
 		],
@@ -62,7 +32,27 @@
 	{
 		"data": [
 			{
-				"text": "more",
+				"text": "next restaurant please",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "next one",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "next one please",
 				"userDefined": false
 			}
 		],

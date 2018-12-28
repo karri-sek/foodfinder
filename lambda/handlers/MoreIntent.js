@@ -1,9 +1,7 @@
-const { sendResDetailsEmail } = require("../../utils/sendResDetailsEmail");
 module.exports = {
   MoreIntent() {
     const detailsRes = this.getSessionAttribute("HDRes");
     console.log("detailsRes", detailsRes);
-    sendResDetailsEmail();
     this.followUpState("MoreDetailsState").ask(
       this.t("A_MORE_DETAILS", getMsgParams(detailsRes))
     );
@@ -12,7 +10,6 @@ module.exports = {
     YesIntent() {
       const detailsRes = this.getSessionAttribute("HDRes");
       console.log("detailsRes", detailsRes);
-      sendResDetailsEmail();
       this.followUpState("MoreDetailsState").ask(
         this.t("YES_MORE_DETAILS", getAddressParams(detailsRes))
       );

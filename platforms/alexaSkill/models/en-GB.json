@@ -43,13 +43,29 @@
 				{
 					"name": "MoreIntent",
 					"samples": [
-						"go for more",
-						"more restaurants",
-						"go to next restaurant",
-						"next",
-						"next restaurant",
-						"more for next restaurant",
+						"more details",
+						"more details please",
 						"more"
+					]
+				},
+				{
+					"name": "NextIntent",
+					"samples": [
+						"next",
+						"next please",
+						"go for next",
+						"next restaurant please",
+						"next one",
+						"next one please"
+					]
+				},
+				{
+					"name": "NewSearchIntent",
+					"samples": [
+						"begin a new search",
+						"search again",
+						"search please",
+						"go for next search"
 					]
 				},
 				{
@@ -75,11 +91,18 @@
 				},
 				{
 					"name": "AMAZON.HelpIntent",
-					"samples": []
+					"samples": [
+						"help me",
+						"help please"
+					]
 				},
 				{
 					"name": "AMAZON.StopIntent",
-					"samples": []
+					"samples": [
+						"goodbye",
+						"close",
+						"close this skill"
+					]
 				},
 				{
 					"name": "AMAZON.YesIntent",

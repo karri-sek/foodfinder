@@ -1,23 +1,28 @@
 const { callYelpApi } = require("../../utils/yelpApiHelper");
 const sl = require("../../config/stringLiterals");
 const { getZomatoClient, getLocationParams } = require("../../utils/cUtils");
+const { sayFirstResult } = require("../../utils/yelpApiHelper");
 module.exports = {
   LocationIntent(location) {
     const sLoc = location.value;
     console.log("location:", sLoc);
     this.setSessionAttribute("location", sLoc);
-    switch (this.requestObj.request.locale) {
-      case sl.en_IN:
-        handleRequest(this, sLoc);
-        break;
-      case sl.en_GB:
-        callYelpApi({ location: sLoc }).then(res => passRes(this, res, sLoc));
-        break;
-      case sl.en_US:
-        handleRequest(this, sLoc);
-        break;
-      default:
-        console.log("you should not be here!!!");
+    const rName = this.setSessionAttribute("recipeName");
+    if (sLoc && rName) sayFirstResult(this, sLoc, rName);
+    else {
+      switch (this.requestObj.request.locale) {
+        case sl.en_IN:
+          handleRequest(this, sLoc);
+          break;
+        case sl.en_GB:
+          callYelpApi({ location: sLoc }).then(res => passRes(this, res, sLoc));
+          break;
+        case sl.en_US:
+          handleRequest(this, sLoc);
+          break;
+        default:
+          console.log("you should not be here!!!");
+      }
     }
   }
 };

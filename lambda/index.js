@@ -5,7 +5,7 @@ const locationHandler = require("./handlers/locationIntent");
 const businessSearchHandler = require("./handlers/businessSearchIntent");
 const moreHandler = require("./handlers/MoreIntent");
 const nextHandler = require("./handlers/nextIntent");
-const stopHandler = require("./handlers/stopIntent");
+const builtInIntents = require("./handlers/builtInIntents");
 const nameState = require("../states/name");
 const sprintf = "i18next-sprintf-postprocessor";
 const gb = require("../app/i18n/en-GB.json");
@@ -35,7 +35,9 @@ const config = {
     "AMAZON.StopIntent": "StopIntent",
     "AMAZON.YesIntent": "YesIntent",
     "AMAZON.NoIntent": "NoIntent",
-    "AMAZON.NextIntent": "NextIntent"
+    "AMAZON.NextIntent": "NextIntent",
+    "AMAZON.CancelIntent": "CancelIntent",
+    "AMAZON.HelpIntent": "HelpIntent"
   }
 };
 
@@ -48,7 +50,7 @@ app.setHandler(
   moreHandler,
   hearDetailsHandler,
   nextHandler,
-  stopHandler
+  builtInIntents
 );
 
 // =================================================================================

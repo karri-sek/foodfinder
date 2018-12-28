@@ -1,0 +1,42 @@
+[
+	{
+		"data": [
+			{
+				"text": "begin a new search",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "search again",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "search please",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	},
+	{
+		"data": [
+			{
+				"text": "go for next search",
+				"userDefined": false
+			}
+		],
+		"isTemplate": false,
+		"count": 0
+	}
+]
