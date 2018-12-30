@@ -17,17 +17,26 @@ const getBDetails = id => {
   return axios.get(url);
 };
 const sayFirstResult = (thisRef, location, rName) => {
-  callYelpApi(cUtils.getYelpParams(location, rName)).then(res => {
-    const { total } = res.data;
-    const fRes = cUtils.getShuffleRes(res.data);
-    thisRef.setSessionAttribute("fRes", fRes);
-    thisRef.setSessionAttribute("popRes", 1);
-    if (total > 1) {
-      thisRef.ask(
-        thisRef.t("FOUND_MORE_RES", cUtils.getMsgParams(total, fRes, rName))
-      );
-    }
-  });
+  callYelpApi(cUtils.getYelpParams(location, rName))
+    .then(res => {
+      const { total } = res.data;
+      const fRes = cUtils.getShuffleRes(res.data);
+      thisRef.setSessionAttribute("fRes", fRes);
+      thisRef.setSessionAttribute("popRes", 1);
+      if (total > 1) {
+        thisRef.ask(
+          thisRef.t("FOUND_MORE_RES", cUtils.getMsgParams(total, fRes, rName))
+        );
+      } else {
+        thisRef.ask(
+          thisRef.t(
+            "SORRY_NO_RES_FOUND",
+            cUtils.getNoResParams(location, rName)
+          )
+        );
+      }
+    })
+    .catch(err => console.log("error from getting yelp results:", err));
 };
 module.exports = { callYelpApi,
 getBDetails,

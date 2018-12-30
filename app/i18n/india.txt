@@ -14,4 +14,13 @@
     "NO_RES_LOCATION": "I'm sorry, I did not find any restaurants at {{sLocation}}.",
     "ASK_FOR_RECIPE": "OK, {{sLocation}}, Now, tell me the recipe name, for a best restaurant match."
   }
+
+  {
+      "name": "MoreIntent",
+      "samples": ["go for more", "more details", "more", "more details please"]
+    },
+    {
+      "name": "NextIntent",
+      "samples": ["next", "another restaurant", "go to next", "next please"]
+    },
 }

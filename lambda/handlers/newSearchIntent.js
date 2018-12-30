@@ -4,6 +4,10 @@ module.exports = {
     if (!srepeats) {
       this.setSessionAttribute("srepeats", 1);
     }
+    const recipeName = this.getSessionAttribute("recipeName");
+
+    const location = this.getSessionAttribute("location");
+    console.log("NSI:", recipeName, ">>>", location);
     if (srepeats && srepeats < 6) {
       this.setSessionAttribute("srepeats", srepeats + 1);
     } else {

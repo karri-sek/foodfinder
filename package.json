@@ -1,13 +1,14 @@
 {
-  "name": "foodpedia",
+  "name": "foodpedia-dev",
   "version": "0.0.1",
-  "description": "Foodpedia search the restaurants based on your preferences",
+  "description": "Foodpedia search the restaurants based on your recipe name and location.",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
     "ud:dd": "serverless deploy function -f funcOne --stage dev && jovo build --stage dev && jovo deploy --stage dev --target model",
     "ud:dev": "jovo build --stage dev && jovo deploy --stage dev --target model",
     "ul": "jovo build && jovo deploy",
+    "sd:dev": "serverless deploy function -f funcOne --stage dev",
     "local": "jovo run -w"
   },
   "husky": {

@@ -4,28 +4,21 @@
       "publishingInformation": {
         "locales": {
           "en-GB": {
-            "summary": "foodpedia.uk gives you best restaurants you can choose to eat in or take away, a restaurant search personalised for you.",
+            "summary": "food pedia gives you best restaurants based on your recipe preference.",
             "examplePhrases": [
-              "Alexa, open foodpedia",
-              "Alexa, tell foodpedia to search for fish and chips",
-              "Alexa, ask foodpedia get the best restaurants near to me"
+              "Alexa, open food pedia",
+              "Alexa, tell food pedia to search restaurants for 'fish and chips'",
+              "Alexa, ask food pedia where can I get 'chicken wings'."
             ],
-            "keywords": [
-              "foodpedia",
-              "food",
-              "fish and chips",
-              "restaurants",
-              "recipes",
-              "near to me"
-            ],
-            "name": "foodpedia",
-            "smallIconUri": "https://s3-eu-west-1.amazonaws.com/foodpedia/small.png",
-            "description": "Foodpedia \n\nWelcome to foodpedia Skill for Alexa, your online restaurant finder! Our search algorithms at Foodpedia trying out hundreds of restaurants and recipes to give you the best best restaurants to match your recipe preferences.\n\nOnce you've enabled foodpedia, you can start by saying 'Alexa, open foodpedia'.",
-            "largeIconUri": "https://s3-eu-west-1.amazonaws.com/foodpedia/big.png"
+            "keywords": ["food pedia", "restaurant search"],
+            "name": "food pedia dev",
+            "smallIconUri": "https://s3-eu-west-1.amazonaws.com/foodpedia/foodpedia_small.png",
+            "description": "food pedia \n\nWelcome to food pedia Skill for Alexa, your online food pedia! Our search algorithms will filter out hundreds of restaurants based on your location and recipe you choose to eat or order.\n\nOnce you've enabled 'food pedia', you can start by saying 'Alexa, open food pedia'.",
+            "largeIconUri": "https://s3-eu-west-1.amazonaws.com/foodpedia/foodpedia_big.png"
           }
         },
         "isAvailableWorldwide": true,
-        "testingInstructions": "none",
+        "testingInstructions": "open food pedia, this skill will ask couple of questions on location and recipe name. Pretty straight forward from there.",
         "category": "RESTAURANT_BOOKING_INFO_AND_REVIEW",
         "distributionCountries": []
       },
@@ -34,7 +27,7 @@
           "interfaces": []
         }
       },
-      "manifestVersion": "1.0",
+      "manifestVersion": "1.1",
       "privacyAndCompliance": {
         "allowsPurchases": false,
         "locales": {
@@ -51,7 +44,7 @@
     "nlu": {
       "name": "alexa"
     },
-    "skillId": "amzn1.ask.skill.b00c37f5-4237-4c59-9d9a-b4f54d90abef",
+    "skillId": "amzn1.ask.skill.3718604e-143d-4dc8-bfb0-c9270d33b731",
     "askProfile": "default"
   },
   "googleAction": {
@@ -71,34 +64,16 @@
     "dev": {
       "host": {
         "lambda": {
-          "arn": "arn:aws:lambda:eu-west-1:254839603819:function:foodpedia-dev",
+          "arn": "arn:aws:lambda:eu-west-1:254839603819:function:restaurant-finder-dev",
           "askProfile": "default"
         }
       },
       "alexaSkill": {
-        "skillId": "amzn1.ask.skill.b00c37f5-4237-4c59-9d9a-b4f54d90abef"
+        "skillId": "amzn1.ask.skill.3718604e-143d-4dc8-bfb0-c9270d33b731"
       },
       "googleAction": {
         "dialogflow": {
-          "endpoint": "https://9gjpcv3dva.execute-api.eu-west-1.amazonaws.com/dev/foodpedia-dev",
-          "projectId": "foodpediaagent",
-          "keyFile": "googleServiceAccount.json"
-        }
-      }
-    },
-    "prod": {
-      "host": {
-        "lambda": {
-          "arn": "arn:aws:lambda:eu-west-1:254839603819:function:foodpedia-prod",
-          "askProfile": "default"
-        }
-      },
-      "alexaSkill": {
-        "skillId": "amzn1.ask.skill.b00c37f5-4237-4c59-9d9a-b4f54d90abef"
-      },
-      "googleAction": {
-        "dialogflow": {
-          "endpoint": "https://9gjpcv3dva.execute-api.eu-west-1.amazonaws.com/dev/foodpedia-dev",
+          "endpoint": "https://bjj3d7kqul.execute-api.eu-west-1.amazonaws.com/dev",
           "projectId": "foodpediaagent",
           "keyFile": "googleServiceAccount.json"
         }

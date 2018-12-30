@@ -1,82 +1,80 @@
 {
-	"alexaSkill": {
-		"manifest": {
-			"publishingInformation": {
-				"locales": {
-					"en-US": {
-						"summary": "This skill is for the finding the restaurants",
-						"examplePhrases": [
-							"Alexa open foodpedia"
-						],
-						"name": "foodpedia",
-						"description": "Locates the food outlets near to your places"
-					}
-				},
-				"isAvailableWorldwide": true,
-				"testingInstructions": "open foodpedia.",
-				"category": "RESTAURANT_BOOKING_INFO_AND_REVIEW",
-				"distributionCountries": []
-			},
-			"apis": {
-				"custom": {
-					"endpoint": {
-						"sslCertificateType": "Wildcard",
-						"uri": "https://webhook.jovo.cloud/6f51434c-0ea1-4d80-b917-c0da3ee20983"
-					}
-				}
-			},
-			"manifestVersion": "1.0"
-		}
-	},
-	"manifest": {
-		"apis": {
-			"custom": {
-				"endpoint": {
-					"uri": "arn:aws:lambda:eu-west-1:254839603819:function:foodpedia-dev"
-				},
-				"interfaces": []
-			}
-		},
-		"publishingInformation": {
-			"locales": {
-				"en-GB": {
-					"summary": "foodpedia.uk gives you best restaurants you can choose to eat in or take away, a restaurant search personalised for you.",
-					"examplePhrases": [
-						"Alexa, open foodpedia",
-						"Alexa, tell foodpedia to search for fish and chips",
-						"Alexa, ask foodpedia get the best restaurants near to me"
-					],
-					"keywords": [
-						"foodpedia",
-						"food",
-						"fish and chips",
-						"restaurants",
-						"recipes",
-						"near to me"
-					],
-					"name": "foodpedia",
-					"smallIconUri": "https://s3-eu-west-1.amazonaws.com/foodpedia/small.png",
-					"description": "Foodpedia \n\nWelcome to foodpedia Skill for Alexa, your online restaurant finder! Our search algorithms at Foodpedia trying out hundreds of restaurants and recipes to give you the best best restaurants to match your recipe preferences.\n\nOnce you've enabled foodpedia, you can start by saying 'Alexa, open foodpedia'.",
-					"largeIconUri": "https://s3-eu-west-1.amazonaws.com/foodpedia/big.png"
-				}
-			},
-			"isAvailableWorldwide": true,
-			"testingInstructions": "none",
-			"category": "RESTAURANT_BOOKING_INFO_AND_REVIEW",
-			"distributionCountries": []
-		},
-		"manifestVersion": "1.0",
-		"privacyAndCompliance": {
-			"allowsPurchases": false,
-			"locales": {
-				"en-GB": {
-					"privacyPolicyUrl": ""
-				}
-			},
-			"isExportCompliant": true,
-			"containsAds": false,
-			"isChildDirected": false,
-			"usesPersonalInfo": false
-		}
-	}
+  "alexaSkill": {
+    "manifest": {
+      "publishingInformation": {
+        "locales": {
+          "en-US": {
+            "summary": "This skill is for the finding the restaurants",
+            "examplePhrases": ["Alexa open foodpedia"],
+            "name": "foodpedia",
+            "description": "Locates the food outlets near to your places"
+          }
+        },
+        "isAvailableWorldwide": true,
+        "testingInstructions": "open foodpedia.",
+        "category": "RESTAURANT_BOOKING_INFO_AND_REVIEW",
+        "distributionCountries": []
+      },
+      "apis": {
+        "custom": {
+          "endpoint": {
+            "sslCertificateType": "Wildcard",
+            "uri": "https://webhook.jovo.cloud/6f51434c-0ea1-4d80-b917-c0da3ee20983"
+          }
+        }
+      },
+      "manifestVersion": "1.0"
+    }
+  },
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:eu-west-1:254839603819:function:restaurant-finder-dev"
+        },
+        "interfaces": []
+      }
+    },
+    "publishingInformation": {
+      "locales": {
+        "en-GB": {
+          "summary": "food pedia gives you best restaurants based on your recipe preference.",
+          "examplePhrases": [
+            "Alexa, open food pedia",
+            "Alexa, tell food pedia to search restaurants for 'fish and chips'",
+            "Alexa, ask food pedia where can I get 'chicken wings'."
+          ],
+          "keywords": [
+            "food pedia",
+            "restaurant search",
+            "fish and chips",
+            "restaurants",
+            "recipes",
+            "near to me"
+          ],
+          "name": "food pedia dev",
+          "smallIconUri": "https://s3-eu-west-1.amazonaws.com/foodpedia/foodpedia_small.png",
+          "description": "food pedia \n\nWelcome to food pedia Skill for Alexa, your online food pedia! Our search algorithms will filter out hundreds of restaurants based on your location and recipe you choose to eat or order.\n\nOnce you've enabled 'food pedia', you can start by saying 'Alexa, open food pedia'.",
+          "largeIconUri": "https://s3-eu-west-1.amazonaws.com/foodpedia/foodpedia_big.png"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "open food pedia, this skill will ask couple of questions on location and recipe name. Pretty straight forward from there.",
+      "category": "RESTAURANT_BOOKING_INFO_AND_REVIEW",
+      "distributionCountries": []
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-GB": {
+          "privacyPolicyUrl": ""
+        }
+      },
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
 }

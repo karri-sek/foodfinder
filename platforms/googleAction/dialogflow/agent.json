@@ -1,7 +1,7 @@
 {
 	"description": "",
 	"webhook": {
-		"url": "https://9gjpcv3dva.execute-api.eu-west-1.amazonaws.com/dev/foodpedia-dev",
+		"url": "https://bjj3d7kqul.execute-api.eu-west-1.amazonaws.com/dev",
 		"available": true
 	},
 	"language": "en"

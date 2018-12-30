@@ -29,11 +29,30 @@ const getLocationParams = ({ total }, sLoc) => ({
 const getNextParams = r_name => ({
   r_name
 });
+
+const getNoResParams = (loc, r_name) => ({
+  loc,
+  r_name
+});
+
+const getMoreParams = data => ({
+  postcode: data.location.zip_code,
+  cnumber: data.phone
+});
+
+const getAddressParams = data => ({
+  address: `${data.location.address1}, ${data.location.zip_code}`,
+  cnumber: data.phone
+});
+
 module.exports = {
   getShuffleRes,
   getYelpParams,
   getZomatoClient,
   getMsgParams,
   getLocationParams,
-  getNextParams
+  getNextParams,
+  getNoResParams,
+  getAddressParams,
+  getMoreParams
 };

@@ -5,9 +5,10 @@ const { sayFirstResult } = require("../../utils/yelpApiHelper");
 module.exports = {
   LocationIntent(location) {
     const sLoc = location.value;
-    console.log("location:", sLoc);
+    console.log("LI:location:", sLoc);
     this.setSessionAttribute("location", sLoc);
-    const rName = this.setSessionAttribute("recipeName");
+    const rName = this.getSessionAttribute("recipeName");
+    console.log("LI:rName:", rName);
     if (sLoc && rName) sayFirstResult(this, sLoc, rName);
     else {
       switch (this.requestObj.request.locale) {

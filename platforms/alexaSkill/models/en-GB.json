@@ -1,7 +1,7 @@
 {
 	"interactionModel": {
 		"languageModel": {
-			"invocationName": "foodpedia",
+			"invocationName": "dev food pedia",
 			"types": [],
 			"intents": [
 				{
@@ -56,7 +56,8 @@
 						"go for next",
 						"next restaurant please",
 						"next one",
-						"next one please"
+						"next one please",
+						"another restaurant"
 					]
 				},
 				{

@@ -1,5 +1,5 @@
 {
-  "invocation": "foodpedia",
+  "invocation": "dev food pedia",
   "intents": [
     {
       "name": "LocationIntent",
@@ -58,7 +58,8 @@
         "go for next",
         "next restaurant please",
         "next one",
-        "next one please"
+        "next one please",
+        "another restaurant"
       ]
     },
     {

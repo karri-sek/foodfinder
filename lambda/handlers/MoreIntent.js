@@ -1,17 +1,18 @@
+const paramUtils = require("../../utils/cUtils");
 module.exports = {
   MoreIntent() {
     const detailsRes = this.getSessionAttribute("HDRes");
-    console.log("detailsRes", detailsRes);
+    console.log("MI:DetailsRes:", detailsRes);
     this.followUpState("MoreDetailsState").ask(
-      this.t("A_MORE_DETAILS", getMsgParams(detailsRes))
+      this.t("A_MORE_DETAILS", paramUtils.getMoreParams(detailsRes))
     );
   },
   MoreDetailsState: {
     YesIntent() {
       const detailsRes = this.getSessionAttribute("HDRes");
-      console.log("detailsRes", detailsRes);
+      console.log("MI:detailsRes:", detailsRes);
       this.followUpState("MoreDetailsState").ask(
-        this.t("YES_MORE_DETAILS", getAddressParams(detailsRes))
+        this.t("YES_MORE_DETAILS", paramUtils.getAddressParams(detailsRes))
       );
     },
     NoIntent() {
@@ -19,13 +20,3 @@ module.exports = {
     }
   }
 };
-
-const getMsgParams = data => ({
-  postcode: data.location.zip_code,
-  cnumber: data.phone
-});
-
-const getAddressParams = data => ({
-  address: `${data.location.address1} , ${data.location.zip_code}`,
-  cnumber: data.phone
-});
