@@ -1,4 +1,4 @@
-const paramUtils = require("../../utils/cUtils");
+const paramUtils = require("../../utils/paramUtils");
 module.exports = {
   MoreIntent() {
     const detailsRes = this.getSessionAttribute("HDRes");

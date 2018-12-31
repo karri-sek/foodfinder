@@ -1,14 +1,14 @@
 const { callYelpApi } = require("../../utils/yelpApiHelper");
 const sl = require("../../config/stringLiterals");
-const { getZomatoClient, getLocationParams } = require("../../utils/cUtils");
+const { getZomatoClient, handleNoLocResults } = require("../../utils/cUtils");
+const { getLocationParams, getNoResParams } = require("../../utils/paramUtils");
 const { sayFirstResult } = require("../../utils/yelpApiHelper");
 module.exports = {
   LocationIntent(location) {
     const sLoc = location.value;
-    console.log("LI:location:", sLoc);
     this.setSessionAttribute("location", sLoc);
     const rName = this.getSessionAttribute("recipeName");
-    console.log("LI:rName:", rName);
+    console.log("LI:rName:location=", rName, sLoc);
     if (sLoc && rName) sayFirstResult(this, sLoc, rName);
     else {
       switch (this.requestObj.request.locale) {
@@ -16,7 +16,9 @@ module.exports = {
           handleRequest(this, sLoc);
           break;
         case sl.en_GB:
-          callYelpApi({ location: sLoc }).then(res => passRes(this, res, sLoc));
+          callYelpApi({ location: sLoc })
+            .then(res => passRes(this, res, sLoc))
+            .catch(err => handleNoLocResults(err, this, sLoc, rName));
           break;
         case sl.en_US:
           handleRequest(this, sLoc);
@@ -31,8 +33,6 @@ module.exports = {
 const passRes = (ref, { data }, sLoc) => {
   if (data.total > 0) {
     ref.ask(ref.t("LOCATION_RES_SEARCH", getLocationParams(data, sLoc)));
-  } else {
-    ref.ask(ref.t("NO_RES_LOCATION", getLocationParams(data, sLoc)));
   }
 };
 

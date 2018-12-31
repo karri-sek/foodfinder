@@ -7,11 +7,11 @@
             "summary": "food pedia gives you best restaurants based on your recipe preference.",
             "examplePhrases": [
               "Alexa, open food pedia",
-              "Alexa, tell food pedia to search restaurants for 'fish and chips'",
-              "Alexa, ask food pedia where can I get 'chicken wings'."
+              "Alexa, tell food pedia to search restaurants for fish and chips",
+              "Alexa, ask food pedia where can I get chicken wings."
             ],
             "keywords": ["food pedia", "restaurant search"],
-            "name": "food pedia dev",
+            "name": "food pedia",
             "smallIconUri": "https://s3-eu-west-1.amazonaws.com/foodpedia/foodpedia_small.png",
             "description": "food pedia \n\nWelcome to food pedia Skill for Alexa, your online food pedia! Our search algorithms will filter out hundreds of restaurants based on your location and recipe you choose to eat or order.\n\nOnce you've enabled 'food pedia', you can start by saying 'Alexa, open food pedia'.",
             "largeIconUri": "https://s3-eu-west-1.amazonaws.com/foodpedia/foodpedia_big.png"
