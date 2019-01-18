@@ -1,6 +1,6 @@
 const SORT_BY = "best_match";
 
-const sl = require("../config/stringLiterals");
+const sl = require("./stringLiterals");
 const getYelpParams = (location, term) => ({
   location,
   term,
@@ -23,6 +23,11 @@ const getNextParams = r_name => ({
   r_name
 });
 
+const getWelcomeParams = ({ total }, sLoc) => ({
+  firstname: total,
+  rname: total > 1 ? sl.P_RES : sl.RES,
+  sLoc
+});
 const getNoResParams = (loc, r_name) => ({
   loc,
   r_name

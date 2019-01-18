@@ -33,6 +33,7 @@
   "dependencies": {
     "ask-cli": "^1.5.1",
     "axios": "^0.18.0",
+    "axios-mock-adapter": "^1.15.0",
     "babel-preset-node6": "^11.0.0",
     "babel-preset-node8": "^1.2.0",
     "i18next-sprintf-postprocessor": "^0.2.2",

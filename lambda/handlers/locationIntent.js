@@ -1,5 +1,5 @@
 const { callYelpApi } = require("../../utils/yelpApiHelper");
-const sl = require("../../config/stringLiterals");
+const sl = require("../../utils/stringLiterals");
 const { getZomatoClient, handleNoLocResults } = require("../../utils/cUtils");
 const { getLocationParams, getNoResParams } = require("../../utils/paramUtils");
 const { sayFirstResult } = require("../../utils/yelpApiHelper");

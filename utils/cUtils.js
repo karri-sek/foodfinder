@@ -13,8 +13,14 @@ const handleNoLocResults = (err, ref, loc, rname) => {
   console.log("No Results found for location response from yelp:", err);
 };
 
+const getCardDetails = resJSON => ({
+  title: resJSON.name,
+  content: resJSON.location.display_address,
+  imageUrl: resJSON.image_url
+});
 module.exports = {
   getShuffleRes,
   getZomatoClient,
-  handleNoLocResults
+  handleNoLocResults,
+  getCardDetails
 };

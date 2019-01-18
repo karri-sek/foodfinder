@@ -32,7 +32,7 @@
         "allowsPurchases": false,
         "locales": {
           "en-GB": {
-            "privacyPolicyUrl": ""
+            "privacyPolicyUrl": "https://foodpedia.uk/privacy.html"
           }
         },
         "isExportCompliant": true,
@@ -73,7 +73,7 @@
       },
       "googleAction": {
         "dialogflow": {
-          "endpoint": "https://bjj3d7kqul.execute-api.eu-west-1.amazonaws.com/dev",
+          "endpoint": "https://bjj3d7kqul.execute-api.eu-west-1.amazonaws.com/dev/restaurant-finder",
           "projectId": "foodpediaagent",
           "keyFile": "googleServiceAccount.json"
         }

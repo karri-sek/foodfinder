@@ -1,11 +1,8 @@
 {
   "translation": {
-    "WELCOME": "Welcome to foodpedia, tell me your preferred location to search for best Restaurant.",
-    "WELCOME_WITH_PARAMETER": "Welcome {{firstname}} {{lastname}}",
-    "WELCOME_ARRAY": ["Welcome", "Hey", "Hello"],
     "GOODBYE_NOT_LINKED": "ThankQ very much for using the foodpedia.",
     "FOUND_MORE_RES": "I've found {{n_restaurants}} restaurants, for {{search_term}}. First up is {{res_name}}. Say 'Hear the details' to listen the details, or say 'next' to the next best restaurant?",
-    "HEAR_DETAILS": "Here we go. This restaurant has {{rating}} rating, and {{rcount}} reviews. Say 'more' to get more details, or begin a new search.",
+    "DESCRIPTION": "Here we go. This restaurant has {{rating}} rating, and {{rcount}} reviews. Say 'more' to get more details, or begin a new search.",
     "A_MORE_DETAILS": "OK. Here are the few more details. It is located at <say-as interpret-as='address'>{{postcode}} </say-as> postcode. <say-as interpret-as='telephone'> {{cnumber}} </say-as> is the contact number. Would you like to hear it again? or find another restaurant.",
     "NA_MORE_DETAILS": "OK. Here are the more details. It is located at {{postcode}} postcode and {{cnumber}} is the contact number. I've send that details to your Alexa app. Would you like to hear it again? or go for next restaurant.",
     "GO_FOR_NEXT_RES": "OK. Say another restaurant to hear the details or Say goodbye to close this skill.",
@@ -18,6 +15,11 @@
     "SORRY_NO_RES_FOUND": "Sorry, I did not find any restaurants which serve {{r_name}} in {{loc}}. Begin a new search with change in location or recipe.",
     "R_FOUND_L_NOT_FOUND": "OK, I got your recipe {{r_name}} , now tell me your preferred location to search for best restaurant.",
     "EXCEED_SEARCHES": "Thankq for using the skill. I will come back with better search results on next invocation.",
-    "HELP_MSG": "This skill gives you the best restaurants based on your preferred location and recipe, say 'Alexa, open foodpedia' to start using this skill."
+    "HELP_MSG": "This skill gives you the best restaurants based on your preferred location and recipe, say 'Alexa, open foodpedia' to start using this skill.",
+    "WELCOME": "Welcome to food pedia, tell me your preferred location to search for best Restaurant.",
+    "ACCOUNT_LINK_WELCOME_WITH_NO_SEARCH": "Welcome {{firstname}}, food pedia is all about search best restaurants based on your location and recipe. Now, tell me your preferred location to start a search.",
+    "ACCOUNT_LINKED_WITH_HISTORY": "Welcome back {{firstname}}, hope you had great time at {{rname}}, now tell me your preferred location to search for best Restaurant.",
+    "WELCOME_WITH_ACCOUNT_LINK_MSG": "Welcome to food pedia, I have just sent an account linking card to your alexa app, please do account linking to receive email with your search results. Now, tell me your preferred location to search for best restaurant?",
+    "WELCOME_ARRAY": ["Welcome", "Hey", "Hello"]
   }
 }

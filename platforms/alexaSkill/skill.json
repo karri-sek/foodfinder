@@ -68,7 +68,7 @@
       "allowsPurchases": false,
       "locales": {
         "en-GB": {
-          "privacyPolicyUrl": ""
+          "privacyPolicyUrl": "https://foodpedia.uk/privacy.html"
         }
       },
       "isExportCompliant": true,
